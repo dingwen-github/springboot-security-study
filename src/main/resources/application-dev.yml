@@ -1,0 +1,32 @@
+spring:
+  devtools:
+    restart:
+      #开始热加载
+      enabled: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/springboot-security?useUnicode=true&characterEncoding=utf8&useSSL=false&nullCatalogMeansCurrent=true&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+mybatis:
+  config-location: classpath:config/mybatis-config.xml
+  mapper-locations: classpath:mapper/*.xml
+server:
+  port: 8080
+  #地址
+  address: 192.168.117
+  servlet:
+    context-path: /springboot-security-study
+
+
+#配置显示mybatis执行sql
+logging:
+  level:
+    com:
+      dw:
+        ss:
+          mapper: debug
+      #日志配置
+  config: classpath:log/logback.xml
+  file:
+    path: log
