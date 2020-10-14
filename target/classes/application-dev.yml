@@ -30,3 +30,7 @@ logging:
   config: classpath:log/logback.xml
   file:
     path: log
+
+thymeleaf:
+  prefix: classpath:/views/
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--对应的AccountMap类-->
+<mapper namespace="com.dw.ss.mapper.UserMapper">
+    <select id="findByUserName" parameterType="java.lang.String" resultType="com.dw.ss.pojo.User">
+        select * from sys_user where `name` = #{username}
+    </select>
+</mapper>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--对应的AccountMap类-->
+<mapper namespace="com.dw.ss.mapper.PermissionMapper">
+    <select id="findByUserId" parameterType="java.lang.String" resultType="com.dw.ss.pojo.Permission">
+        select p.* from (sys_user u left join sys_role_user ru on u.id = ru.sys_user_id
+        left join sys_role r on r.id = ru.sys_role_id left join sys_permission_role pr on pr.role_id = r.id
+        left join sys_permission p on p.id = pr.permission_id) where u.id = #{userId}
+    </select>
+
+    <select id="findAll" resultType="com.dw.ss.pojo.Permission">
+        select * from sys_permisson
+    </select>
+</mapper>

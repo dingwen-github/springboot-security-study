@@ -1,0 +1,50 @@
+2020-10-14 09:15:15.100 [http-nio-192.168.0.117-8080-exec-4] DEBUG com.dw.ss.mapper.UserMapper.findByUserName - ==>  Preparing: select * from sys_user where username = ?
+2020-10-14 09:15:15.108 [http-nio-192.168.0.117-8080-exec-4] DEBUG com.dw.ss.mapper.UserMapper.findByUserName - ==> Parameters: admin(String)
+2020-10-14 09:16:40.808 [http-nio-192.168.0.117-8080-exec-2] DEBUG com.dw.ss.mapper.UserMapper.findByUserName - ==>  Preparing: select * from sys_user where `name` = ?
+2020-10-14 09:16:40.815 [http-nio-192.168.0.117-8080-exec-2] DEBUG com.dw.ss.mapper.UserMapper.findByUserName - ==> Parameters: admin(String)
+2020-10-14 09:16:40.832 [http-nio-192.168.0.117-8080-exec-2] DEBUG com.dw.ss.mapper.UserMapper.findByUserName - <==      Total: 1
+2020-10-14 09:16:40.839 [http-nio-192.168.0.117-8080-exec-2] DEBUG com.dw.ss.mapper.PermissionMapper.findByUserId - ==>  Preparing: select p.* from (sys_user u left join sys_role_user ru on u.id = ru.sys_user_id left join sys_role r on r.id = ru.sys_role_id left join sys_permission_role pr on pr.role_id = r.id left join sys_permission p on p.id = pr.permission_id) where u.id = ?
+2020-10-14 09:16:40.839 [http-nio-192.168.0.117-8080-exec-2] DEBUG com.dw.ss.mapper.PermissionMapper.findByUserId - ==> Parameters: admin(String)
+2020-10-14 09:16:40.844 [http-nio-192.168.0.117-8080-exec-2] DEBUG com.dw.ss.mapper.PermissionMapper.findByUserId - <==      Total: 0
+2020-10-14 09:20:37.260 [http-nio-192.168.0.117-8080-exec-1] DEBUG com.dw.ss.mapper.UserMapper.findByUserName - ==>  Preparing: select * from sys_user where `name` = ?
+2020-10-14 09:20:37.268 [http-nio-192.168.0.117-8080-exec-1] DEBUG com.dw.ss.mapper.UserMapper.findByUserName - ==> Parameters: admin(String)
+2020-10-14 09:20:37.282 [http-nio-192.168.0.117-8080-exec-1] DEBUG com.dw.ss.mapper.UserMapper.findByUserName - <==      Total: 1
+2020-10-14 09:20:39.707 [http-nio-192.168.0.117-8080-exec-1] DEBUG com.dw.ss.mapper.PermissionMapper.findByUserId - ==>  Preparing: select p.* from (sys_user u left join sys_role_user ru on u.id = ru.sys_user_id left join sys_role r on r.id = ru.sys_role_id left join sys_permission_role pr on pr.role_id = r.id left join sys_permission p on p.id = pr.permission_id) where u.id = ?
+2020-10-14 09:20:39.707 [http-nio-192.168.0.117-8080-exec-1] DEBUG com.dw.ss.mapper.PermissionMapper.findByUserId - ==> Parameters: 2(String)
+2020-10-14 09:20:39.710 [http-nio-192.168.0.117-8080-exec-1] DEBUG com.dw.ss.mapper.PermissionMapper.findByUserId - <==      Total: 1
+2020-10-14 09:24:10.397 [http-nio-192.168.0.117-8080-exec-2] DEBUG com.dw.ss.mapper.UserMapper.findByUserName - ==>  Preparing: select * from sys_user where `name` = ?
+2020-10-14 09:24:10.404 [http-nio-192.168.0.117-8080-exec-2] DEBUG com.dw.ss.mapper.UserMapper.findByUserName - ==> Parameters: admin(String)
+2020-10-14 09:24:10.421 [http-nio-192.168.0.117-8080-exec-2] DEBUG com.dw.ss.mapper.UserMapper.findByUserName - <==      Total: 1
+2020-10-14 09:24:10.976 [http-nio-192.168.0.117-8080-exec-2] DEBUG com.dw.ss.mapper.PermissionMapper.findByUserId - ==>  Preparing: select p.* from (sys_user u left join sys_role_user ru on u.id = ru.sys_user_id left join sys_role r on r.id = ru.sys_role_id left join sys_permission_role pr on pr.role_id = r.id left join sys_permission p on p.id = pr.permission_id) where u.id = ?
+2020-10-14 09:24:10.977 [http-nio-192.168.0.117-8080-exec-2] DEBUG com.dw.ss.mapper.PermissionMapper.findByUserId - ==> Parameters: 2(String)
+2020-10-14 09:24:10.980 [http-nio-192.168.0.117-8080-exec-2] DEBUG com.dw.ss.mapper.PermissionMapper.findByUserId - <==      Total: 1
+2020-10-14 09:47:18.895 [http-nio-192.168.0.117-8080-exec-3] DEBUG com.dw.ss.mapper.UserMapper.findByUserName - ==>  Preparing: select * from sys_user where `name` = ?
+2020-10-14 09:47:18.901 [http-nio-192.168.0.117-8080-exec-3] DEBUG com.dw.ss.mapper.UserMapper.findByUserName - ==> Parameters: admin(String)
+2020-10-14 09:47:18.919 [http-nio-192.168.0.117-8080-exec-3] DEBUG com.dw.ss.mapper.UserMapper.findByUserName - <==      Total: 1
+2020-10-14 09:47:18.926 [http-nio-192.168.0.117-8080-exec-3] DEBUG com.dw.ss.mapper.PermissionMapper.findByUserId - ==>  Preparing: select p.* from (sys_user u left join sys_role_user ru on u.id = ru.sys_user_id left join sys_role r on r.id = ru.sys_role_id left join sys_permission_role pr on pr.role_id = r.id left join sys_permission p on p.id = pr.permission_id) where u.id = ?
+2020-10-14 09:47:18.926 [http-nio-192.168.0.117-8080-exec-3] DEBUG com.dw.ss.mapper.PermissionMapper.findByUserId - ==> Parameters: 2(String)
+2020-10-14 09:47:18.929 [http-nio-192.168.0.117-8080-exec-3] DEBUG com.dw.ss.mapper.PermissionMapper.findByUserId - <==      Total: 1
+2020-10-14 09:53:10.690 [http-nio-192.168.0.117-8080-exec-7] DEBUG com.dw.ss.mapper.UserMapper.findByUserName - ==>  Preparing: select * from sys_user where `name` = ?
+2020-10-14 09:53:10.691 [http-nio-192.168.0.117-8080-exec-7] DEBUG com.dw.ss.mapper.UserMapper.findByUserName - ==> Parameters: admin(String)
+2020-10-14 09:53:10.692 [http-nio-192.168.0.117-8080-exec-7] DEBUG com.dw.ss.mapper.UserMapper.findByUserName - <==      Total: 1
+2020-10-14 09:53:10.692 [http-nio-192.168.0.117-8080-exec-7] DEBUG com.dw.ss.mapper.PermissionMapper.findByUserId - ==>  Preparing: select p.* from (sys_user u left join sys_role_user ru on u.id = ru.sys_user_id left join sys_role r on r.id = ru.sys_role_id left join sys_permission_role pr on pr.role_id = r.id left join sys_permission p on p.id = pr.permission_id) where u.id = ?
+2020-10-14 09:53:10.692 [http-nio-192.168.0.117-8080-exec-7] DEBUG com.dw.ss.mapper.PermissionMapper.findByUserId - ==> Parameters: 2(String)
+2020-10-14 09:53:10.693 [http-nio-192.168.0.117-8080-exec-7] DEBUG com.dw.ss.mapper.PermissionMapper.findByUserId - <==      Total: 1
+2020-10-14 09:53:26.372 [http-nio-192.168.0.117-8080-exec-9] DEBUG com.dw.ss.mapper.UserMapper.findByUserName - ==>  Preparing: select * from sys_user where `name` = ?
+2020-10-14 09:53:26.372 [http-nio-192.168.0.117-8080-exec-9] DEBUG com.dw.ss.mapper.UserMapper.findByUserName - ==> Parameters: admin(String)
+2020-10-14 09:53:26.373 [http-nio-192.168.0.117-8080-exec-9] DEBUG com.dw.ss.mapper.UserMapper.findByUserName - <==      Total: 1
+2020-10-14 09:53:26.374 [http-nio-192.168.0.117-8080-exec-9] DEBUG com.dw.ss.mapper.PermissionMapper.findByUserId - ==>  Preparing: select p.* from (sys_user u left join sys_role_user ru on u.id = ru.sys_user_id left join sys_role r on r.id = ru.sys_role_id left join sys_permission_role pr on pr.role_id = r.id left join sys_permission p on p.id = pr.permission_id) where u.id = ?
+2020-10-14 09:53:26.374 [http-nio-192.168.0.117-8080-exec-9] DEBUG com.dw.ss.mapper.PermissionMapper.findByUserId - ==> Parameters: 2(String)
+2020-10-14 09:53:26.375 [http-nio-192.168.0.117-8080-exec-9] DEBUG com.dw.ss.mapper.PermissionMapper.findByUserId - <==      Total: 1
+2020-10-14 10:26:34.278 [http-nio-192.168.0.117-8080-exec-8] DEBUG com.dw.ss.mapper.UserMapper.findByUserName - ==>  Preparing: select * from sys_user where `name` = ?
+2020-10-14 10:26:34.299 [http-nio-192.168.0.117-8080-exec-8] DEBUG com.dw.ss.mapper.UserMapper.findByUserName - ==> Parameters: admin(String)
+2020-10-14 10:26:34.322 [http-nio-192.168.0.117-8080-exec-8] DEBUG com.dw.ss.mapper.UserMapper.findByUserName - <==      Total: 1
+2020-10-14 10:26:34.331 [http-nio-192.168.0.117-8080-exec-8] DEBUG com.dw.ss.mapper.PermissionMapper.findByUserId - ==>  Preparing: select p.* from (sys_user u left join sys_role_user ru on u.id = ru.sys_user_id left join sys_role r on r.id = ru.sys_role_id left join sys_permission_role pr on pr.role_id = r.id left join sys_permission p on p.id = pr.permission_id) where u.id = ?
+2020-10-14 10:26:34.332 [http-nio-192.168.0.117-8080-exec-8] DEBUG com.dw.ss.mapper.PermissionMapper.findByUserId - ==> Parameters: 2(String)
+2020-10-14 10:26:34.335 [http-nio-192.168.0.117-8080-exec-8] DEBUG com.dw.ss.mapper.PermissionMapper.findByUserId - <==      Total: 1
+2020-10-14 10:27:00.355 [http-nio-192.168.0.117-8080-exec-10] DEBUG com.dw.ss.mapper.UserMapper.findByUserName - ==>  Preparing: select * from sys_user where `name` = ?
+2020-10-14 10:27:00.356 [http-nio-192.168.0.117-8080-exec-10] DEBUG com.dw.ss.mapper.UserMapper.findByUserName - ==> Parameters: admin(String)
+2020-10-14 10:27:00.357 [http-nio-192.168.0.117-8080-exec-10] DEBUG com.dw.ss.mapper.UserMapper.findByUserName - <==      Total: 1
+2020-10-14 10:27:00.357 [http-nio-192.168.0.117-8080-exec-10] DEBUG com.dw.ss.mapper.PermissionMapper.findByUserId - ==>  Preparing: select p.* from (sys_user u left join sys_role_user ru on u.id = ru.sys_user_id left join sys_role r on r.id = ru.sys_role_id left join sys_permission_role pr on pr.role_id = r.id left join sys_permission p on p.id = pr.permission_id) where u.id = ?
+2020-10-14 10:27:00.357 [http-nio-192.168.0.117-8080-exec-10] DEBUG com.dw.ss.mapper.PermissionMapper.findByUserId - ==> Parameters: 2(String)
+2020-10-14 10:27:00.358 [http-nio-192.168.0.117-8080-exec-10] DEBUG com.dw.ss.mapper.PermissionMapper.findByUserId - <==      Total: 1
